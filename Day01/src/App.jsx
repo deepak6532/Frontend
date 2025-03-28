@@ -22,7 +22,9 @@ const App = () => {
        autoFocus   
        required
        name="name"
+
        onChange={HandleChange}
+       
        ></input>
 
       <input type="email" 

@@ -7,9 +7,18 @@ const App = () => {
   const [password ,setPassword] = React.useState("");
 
  
-  // const handleShowPasswordChange = () => {
-  //   setPassword(!password);
-  // };
+
+//   const show = () => {
+//     return (
+//     <div div className="w-95 mx-auto m-1 h-29  text-black ">
+
+//     <h1 className='mt-2'><strong>Name:</strong>     {name}     </h1>
+//     <h1 className='mt-2'><strong>Email:</strong>    {email}    </h1>
+//     <h1 className='mt-2'><strong>Password:</strong> {password} </h1>
+
+// </div>
+//     );
+//   };
 
   return (
     <>
@@ -69,12 +78,13 @@ const App = () => {
         className="size-4 mt-4 ml-2 border-2 rounded outline-none"
         name="chk" 
        
-        id="showPassword"
-              // checked={password}
-              // onChange={handleShowPasswordChange}
+      
         
         ></input>
 
+{/* 
+<button onClick={show}
+className="h-8 w-18 border-2 mt-3 m-10 rounded  bg-red-600 text-white font-bold cursor-pointer">submit</button> */}
 
         <div div className="w-95 mx-auto m-1 h-29  text-black ">
 
@@ -83,6 +93,8 @@ const App = () => {
             <h1 className='mt-2'><strong>Password:</strong> {password} </h1>
 
         </div>
+  
+          
 
         </div>
 
@@ -93,16 +105,7 @@ const App = () => {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
     </>
   )
 }

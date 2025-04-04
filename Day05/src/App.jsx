@@ -6,7 +6,7 @@ import Sum from './Components/Sum';
 import Mul from './Components/Mul';
 import Sub from './Components/Sub';
 import Greator3 from './Components/greator3';
-import Fact from './Components/Fact';
+import Factorial from './Components/Factorial';
 
 const App = () => {
   return (
@@ -28,13 +28,14 @@ const App = () => {
               </li>
 
               <li className="mx-4 text-3xl">
-                <Link to="/Greator3">GreatorThree</Link>
+                <Link to="/Greator3">Largest3</Link>
               </li>
 
               <li className="mx-4 text-3xl">
-                <Link to="/fact">Fact</Link>
-              </li>
+                <Link to="/Factorial">Factorial</Link>
+              </li>  
 
+            
             </ul>
           </nav>
 
@@ -42,9 +43,9 @@ const App = () => {
             <Route path="/sum" element={<Sum />} />
             <Route path="/mul" element={<Mul />} />
             <Route path="/sub" element={<Sub />} />
-            <Route path="/Greator3" element={<Greator3 />} />
+            <Route path="/Greator3" element={<Greator3 />} />            
+            <Route path="/factorial" element={<Factorial/>}/>
 
-            <Route path="/fact" element={<Fact />} />
 
           </Routes>
         </div>

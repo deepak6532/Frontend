@@ -11,14 +11,12 @@ const Greator3 = () => {
     e.preventDefault()
 
     setans((a > b && a > c) ? a :
-      (b > c && b > a) ? b :
-        c)
+           (b > c && b > a) ? b :
+          c)
 
     seta("")
     setb("")
     setc("")
-
-
 
   }
 

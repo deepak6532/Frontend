@@ -55,7 +55,7 @@ const App = () => {
           
             {a && b ?
            `sum of ${a} and ${b} is : ${parseInt(a)+ parseInt(b)}`
-           : "Enter values to see the sum"
+           :` Enter values to see the sum    `
             }
 
           

@@ -3,6 +3,7 @@ import React from 'react'
 import Sum from './Components/Sum'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Mul from './Components/Mul';
+import Sub from './Components/Sub';
 
 
 const App = () => {
@@ -20,9 +21,9 @@ const App = () => {
               <Link to="/mul">Mul</Link>
               </li>
 
-              {/* <li className="mx-4 text-3xl ">
-              <Link to="/sub">Sub</Link>
-              </li> */}
+             <li className="mx-4 text-3xl">
+              <Link to ="/Sub">Sub</Link>
+             </li>
 
             </ul>
           </nav>
@@ -30,7 +31,7 @@ const App = () => {
           <Routes>
             <Route path="/sum" element={<Sum />} />
             <Route path="/mul" element={<Mul />} />
-            {/* <Route path="/sub" element={<Sub />} /> */}
+            <Route path="/sub" element={<Sub />} />
         
           </Routes>
         </div>

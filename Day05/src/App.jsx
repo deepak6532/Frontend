@@ -14,7 +14,7 @@ const App = () => {
       <Router>
         <div className="bg-slate-900 min-h-screen text-white">
           <nav className="p-6">
-            <ul className="flex justify-center">
+            <ul className="flex justify-center ">
               <li className="mx-4 text-3xl ">
                 <Link to="/sum">Sum</Link>
               </li>

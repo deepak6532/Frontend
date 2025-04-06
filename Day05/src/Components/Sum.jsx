@@ -5,6 +5,7 @@ const Sum = () => {
   const [a, seta] = React.useState("");
   const [b, setb] = React.useState("");
   const [ans, setans] = React.useState();
+  
   const HandleSubmit = (e) => {
     e.preventDefault();
     setans(parseInt(a) + parseInt(b))

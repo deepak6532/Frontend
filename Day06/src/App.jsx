@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 const App = () => {
 
+// find the largest number among 3 numbers using arry useState()
+
 const [Numbers, SetNumbers] = useState({ 
     num1: "", 
     num2: "",
@@ -9,6 +11,7 @@ const [Numbers, SetNumbers] = useState({
  });
 
 const [Max ,setMax] = useState("");
+
 const HandleChange =(e) =>
 {
     SetNumbers({ ...Numbers ,[e.target.name] : e.target.value});
@@ -17,10 +20,10 @@ const HandleChange =(e) =>
 const HandleSubmit = (e) => {
     e.preventDefault();
     let max = Numbers.num1;
-    if (max<Numbers.num2) {
+    if(max<Numbers.num2) {
       max = Numbers.num2;
     }
-    if (max<Numbers.num3) {
+    if(max<Numbers.num3) {
       max = Numbers.num3;
     }
     setMax(max);
@@ -40,6 +43,7 @@ return (
                         name="num1"
                         value=  {Numbers.num1}
                         onChange={HandleChange }
+                        autoFocus
 
                         placeholder="Enter first number"
                         required
